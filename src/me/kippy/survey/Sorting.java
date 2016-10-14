@@ -11,7 +11,7 @@ public static void sort() {
 			Player player2 = Main.players.get(i1);
 			if(player1 != player2) {
 				int score = 0;
-				for(i2 = 0; i2 < Main.questions.size(); i2++) {
+				for(i2 = 5; i2 <= 25; i2++) {
 					if(player1.get(i2) == player2.get(i2)){
 						score = score +1;
 					}	

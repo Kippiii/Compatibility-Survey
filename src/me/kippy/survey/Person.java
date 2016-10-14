@@ -1,7 +1,10 @@
 package me.kippy.survey;
 
 public class Person {
+	String name;
 	
-	//Group 1
+	public Person(String name) {
+		name = this.name;
+	}
 
 }

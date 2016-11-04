@@ -1,0 +1,23 @@
+package me.kippy.survey;
+
+import java.util.Comparator;
+import java.util.HashMap;
+
+public class valueComparator implements Comparator<Person> {
+	HashMap<Person, Integer> map = new HashMap<Person, Integer>();
+	
+	public valueComparator(HashMap<Person, Integer> map) {
+		this.map.putAll(map);
+	}
+
+	public int compare(Person arg0, Person arg1) {
+		if(map.get(arg0) >= map.get(arg1)) {
+			return -1;
+		}else{
+			return 1;
+		}
+	}
+	
+	
+
+}

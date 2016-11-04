@@ -11,8 +11,8 @@ public class Person {
 		return answers.get(i - 1);
 	}
 	
-	public void set(int i, String s){
-		answers.set(i - 1, s);
+	public void set(String s){
+		answers.add(s);
 	}
 	
 	public HashMap<Person, Integer> getHash() {

@@ -13,7 +13,7 @@ public static void sort() {
 			Person player2 = Main.players.get(i1);
 			if(player1 != player2) {
 				int score = 0;
-				for(int i2 = 5; i2 <= 25; i2++) {
+				for(int i2 = 6; i2 <= 26; i2++) {
 					if(player1.get(i2).equalsIgnoreCase(player2.get(i2))){
 						score = score +1;
 					}	
@@ -27,5 +27,8 @@ public static void sort() {
 		 player1.setHash(scores);
 		 
 	}
+	
+	Main.scan();
+	
 }
 }
